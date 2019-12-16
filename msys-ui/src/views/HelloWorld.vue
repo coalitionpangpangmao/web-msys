@@ -4,6 +4,7 @@
     <h2>Essential Links</h2>
     <ul>
       <li>
+        <el-button type='primary'>主要按钮</el-button>
         <a
           href="https://vuejs.org"
           target="_blank"
