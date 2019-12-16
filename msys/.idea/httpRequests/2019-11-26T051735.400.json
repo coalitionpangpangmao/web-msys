@@ -1,0 +1,7 @@
+{
+  "timestamp": "2019-11-26T09:17:35.851+0000",
+  "status": 400,
+  "error": "Bad Request",
+  "message": "Required Long parameter 'id' is not present",
+  "path": "/sysUser/findById"
+}

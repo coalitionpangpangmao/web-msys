@@ -1,0 +1,33 @@
+# tomcat
+server:
+  port: 8001
+# spring boot admin
+spring:
+  application:
+    name: msys Backup Service
+  boot:
+    admin:
+      client:
+        url: "http://localhost:8000"
+        instance:
+            prefer-ip: true
+            service-url: "http://localhost:8001"
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        serviceName: ${spring.application.name}    # 注册到consul的服务名称
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+# backup datasource
+kitty:
+  backup:
+    datasource:
+      host: localhost
+      userName: root
+      password: ht1811HT
+      database: kitty
